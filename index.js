@@ -53,11 +53,11 @@ while (true) {
 
 const MIN_RANGE_NUMBER = 0;
 const MAX_RANGE_NUMBER = 100;
-const EVEN_STEP = 2;
+const EVEN_DIVIDER = 2;
 const DIVIDER = 9;
 
-for (let i = MAX_RANGE_NUMBER; i >= MIN_RANGE_NUMBER; i -= EVEN_STEP) {
-  if (i % DIVIDER === 0) {
+for (let i = MAX_RANGE_NUMBER; i >= MIN_RANGE_NUMBER; i--) {
+  if ((i % DIVIDER === 0) && (i % EVEN_DIVIDER === 0)) {
     console.log(i);
   }
 }
